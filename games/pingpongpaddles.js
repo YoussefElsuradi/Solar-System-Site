@@ -7,6 +7,18 @@ class Paddle {
 
         this.isUp = false;
         this.isDown = false;
+
+        if (playerPaddle.isUp) {
+            playerPaddle.up(); 
+        }   else if (playerPaddle.isDown) {
+            playerPaddle.down();
+        }
+        update() 
+            if (this.isUp) {
+              this.up();
+            } else if (this.isDown) {
+              this.down();
+            }
     }
 
     display() {
